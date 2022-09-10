@@ -1,0 +1,176 @@
+// CONTROLLS
+@media screen and (max-width: 608px) {
+  .controlls {
+    flex-direction: row !important;
+    top: auto !important;
+    bottom: 0;
+    right: 50% !important;
+    transform: translateX(50%) !important;
+    z-index: 102;
+    width: 100%;
+    background-color: var(--color-black-2);
+    backdrop-filter: blur(5px);
+    .icons {
+      margin: 15px 8px !important;
+    }
+  }
+}
+
+//home page
+@media screen and (max-width: 608px) {
+  .home {
+    grid-template-columns: auto !important;
+    .left-home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .bg-shape {
+        display: none;
+      }
+      .img-cont {
+        margin: 40px auto 60px !important;
+        img {
+          width: 100% !important;
+          height: 370px !important;
+        }
+      }
+    }
+    .right-home {
+      padding: 0 !important;
+      grid-row: 1;
+      h1 {
+        margin: 55px 20px 20px;
+        padding-right: 60px;
+        text-align: center;
+        font-size: 37px !important;
+      }
+      p {
+        padding: 20px;
+        font-size: 21px !important;
+      }
+    }
+  }
+}
+
+//about page
+@media screen and (max-width: 800px) {
+  .about {
+    .about-container {
+      grid-template-columns: 1fr !important;
+      .left-about {
+        margin: 20px 30px 50px;
+        padding: 0 !important	;
+      }
+    }
+  }
+}
+@media screen and (max-width: 608px) {
+  .about {
+    margin: 0 auto 120px !important;
+    .about-container {
+      .left-about {
+        h3 {
+          text-align: center;
+        }
+      }
+      .right-about {
+        width: 90%;
+        margin: auto;
+      }
+    }
+    .stats {
+      .progress-bar-container {
+        width: 85%;
+        margin: auto;
+        grid-template-columns: auto !important;
+      }
+    }
+  }
+}
+
+// Portafolio Page
+@media screen and (max-width: 716px) {
+  .portafolio {
+    .portafolio-items-cont {
+      .portafolio-item {
+        .img-cont {
+          height: 200px !important;
+          width: 200px !important;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 608px) {
+  .portafolio {
+    margin: auto auto 50px !important;
+    .portafolio-title {
+      p {
+        padding-right: 55px;
+      }
+    }
+    .portafolio-items-cont {
+      .portafolio-item {
+        .img-cont {
+          height: 200px !important;
+          width: 200px !important;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Contact me Page
+@media screen and (max-width: 800px) {
+  .contact {
+    margin: auto auto 50px !important;
+    .contact-container {
+      width: 80%;
+      margin: auto;
+      flex-direction: column !important;
+      .right-container {
+        position: relative;
+        margin-top: 30px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -20px;
+          height: 1px;
+          width: 50%;
+          background-color: var(--color-grey-2);
+        }
+        form {
+          margin: 0 !important;
+        }
+      }
+      .left-container {
+        margin-bottom: 30px;
+        p {
+          margin: 0 45px 35px !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 608px) {
+  .contact {
+    .contact-title {
+      padding-right: 35px;
+    }
+    margin-bottom: 100px !important;
+    .contact-container {
+      .right-container {
+        .contact-form {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
